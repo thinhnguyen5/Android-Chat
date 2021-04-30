@@ -19,7 +19,8 @@
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="android:actionMenuTextColor">@android:color/black</item>
-        <item name="homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+>>>>>>> e0e5c0dbe1bc5d7d044a904c1210e0a20650a663
     </style>
 
     <style name="MyActionBar"

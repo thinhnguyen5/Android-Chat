@@ -59,9 +59,10 @@ class MainActivity : AppCompatActivity() {
 
         val messageListener = object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.value != null) {
+
+                if (snapshot.value !=null) {
                     val messagesFromFirebase =
-                        (snapshot.value as HashMap<String, ArrayList<Message>>).get("messages")
+                            (snapshot.value as HashMap<String, ArrayList<Message>>).get("messages")
                     messages.clear()
 
                     if (messagesFromFirebase != null) {
@@ -112,9 +113,9 @@ class MainActivity : AppCompatActivity() {
 
     override  fun onStart() {
         super.onStart()
-        loginDialog()
+        currentUser = auth.currentUser
+        if (currentUser == null) loginDialog()
     }
-
     fun showSettings() {
         val intent = Intent(this, Settings::class.java).apply {
             putExtra("currentUser", currentUser)
@@ -174,7 +175,7 @@ class MainActivity : AppCompatActivity() {
             this.showSettings()
             true
         } else -> {
-            super.onOptionsItemSelected(item)
+             super.onOptionsItemSelected(item)
         }
     }
 }

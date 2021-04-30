@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MyAdapter (private val myDataset: ArrayList<Message>): RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder {
         val myView = LayoutInflater.from(parent.context)
+
             .inflate(R.layout.message, parent, false)
         return MyViewHolder(myView)
     }
@@ -18,6 +19,7 @@ class MyAdapter (private val myDataset: ArrayList<Message>): RecyclerView.Adapte
         holder.message.text = myDataset.get(position).message
         holder.author.text =
             "by " + myDataset.get(position).author +
+
                     " on " + myDataset.get(position).time
     }
 
@@ -29,4 +31,7 @@ class MyAdapter (private val myDataset: ArrayList<Message>): RecyclerView.Adapte
     }
 
 
+
 }
+
+
