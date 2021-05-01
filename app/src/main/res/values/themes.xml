@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/pink</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -20,24 +20,23 @@
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="android:actionMenuTextColor">@android:color/black</item>
         <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
->>>>>>> e0e5c0dbe1bc5d7d044a904c1210e0a20650a663
     </style>
 
     <style name="MyActionBar"
         parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@android:color/white</item>
-        <item name="background">@android:color/white</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="background">@android:color/black</item>
         <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
         <item name="titleTextStyle">@style/MyActionBarTitleText</item>
     </style>
 
     <style name="MyActionBarTitleText"
         parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/pink</item>
     </style>
 
     <style name="MyActionBarTabText"
         parent="@style/Widget.AppCompat.Light.ActionBar.TabText">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/pink</item>
     </style>
 </resources>
